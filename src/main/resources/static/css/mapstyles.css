@@ -1,0 +1,228 @@
+/* Map container styles */
+
+.gm-style-iw {
+    border-radius: 1rem !important;
+    overflow: hidden !important;
+}
+
+.custom-map-button img {
+    position: relative;
+    right: -10%;
+}
+
+.custom-map-button {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: #ffff;
+
+}
+
+.modal-body .frame {
+    border-radius: 1rem;
+}
+
+
+.map-wrapper {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    background-color: #544444;
+}
+
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: Ubuntu;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 0.5rem;
+}
+
+
+/* Map styles */
+#map {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    z-index: 0;
+
+}
+
+/* Button container styles */
+
+.button-container {
+    position: absolute;
+    top: 20px; /* Adjust the vertical position as needed */
+    right: 20px; /* Adjust the horizontal position as needed */
+    display: flex;
+    flex-direction: column;
+    z-index: 1; /* Add a higher z-index value */
+}
+
+
+/* Common styles for upload buttons */
+.upload-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b83c78;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add spacing between buttons */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.desktop-button-wrap{
+    position: relative;
+    background: #b83c78;
+    color: #fff1ff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: 0 20px 25px #1a1b1f;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.desktop-button-wrap:hover{
+    width: 200px;
+    border-radius: 20px;
+    transition-delay: 0.1s;
+}
+
+.desktop-button-wrap:before{
+    content: "";
+    position: absolute;
+}
+
+.desktop-button-wrap span{
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    transition: 0.5s;
+    transform: translateX(-30px);
+}
+
+.desktop-button-wrap:hover span{
+    visibility: visible;
+    opacity: 1;
+    flex-direction: row;
+    transition-delay: 0.55s;
+    transform: translateX(10px);
+}
+
+.button-icon {
+    width: 100%;
+    height: 100%;
+    max-height: fit-content;
+    max-width: fit-content;
+    position: absolute;
+    transform: translate(0, 0);
+    transition: width 0.5s ease, height 0.5s ease, position 0.5s ease;
+}
+
+.desktop-button-wrap:hover .button-icon{
+    width: 100%;
+    height: 100%;
+    max-height: fit-content;
+    max-width: fit-content;
+    position: relative;
+    transform: translate(10px, 0);
+    transition: width 0.5s ease, height 0.5s ease, position 0.5s ease;
+}
+
+/* Styles for the upload icon */
+.upload-button-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    max-width: 52px;
+    max-height: 52px;
+    border-radius: 50%;
+    background-image: url("../../images/Upload_Mobile.png");
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+
+
+
+/* Styles for the take picture button */
+.file-input-wrapper {
+    display: none;
+    position: relative;
+}
+
+/* Hide the default file input */
+.file-input-wrapper input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.take-picture-button {
+    /* Your existing button styles */
+    display: block; /* Change this to "block" if it's not already */
+    width: 52px;
+    height: 52px;
+    max-width: 52px;
+    max-height: 52px;
+    border-radius: 100%;
+    background-image: url("../../images/take_picture.png");
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+
+/* Media query for laptops and larger screens */
+@media (min-width: 1024px) {
+    .desktop {
+        display: block; /* Display on laptop and larger screens */
+    }
+}
+
+/* Media query for tablets and smaller screens with a camera */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block; /* Display on tablets and smaller screens */
+    }
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block; /* Display on tablets and smaller screens */
+    }
+}
