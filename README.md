@@ -65,12 +65,15 @@ mvn spring-boot:run
 Access Plume at http://localhost:8080/index/.
 
 Contributing
+
 We welcome contributions, bug reports, and feature requests! Please visit the issues page. If you wish to contribute, fork the repository and create a feature branch. We appreciate your pull requests.
 
 Licensing
+
 Plume is licensed under the MIT License. Refer to the LICENSE.md file for details.
 
 Gratitude
+
 A heartfelt thank you to all contributors and testers. 
 @miguel-devezas
 @joanarfreitas
