@@ -32,6 +32,7 @@ Team Info: Learn about the developers and contributors.
 8. Privacy and Usage Terms:
 Privacy Policy: Understand our data usage and privacy policies.
 Terms of Service: Learn about the platform's usage terms.
+
 Technological Framework
 Backend: Developed with Java and Spring Boot.
 Frontend: Utilizes Thymeleaf, HTML, CSS, and JavaScript.
